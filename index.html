@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="container">
-      <h2>Make your appointment</h2>
+      <h2 class="jumbotron"> </h2>
       <form id="appt-form">
         <div class="form-group">
           <label for="name">What is your name?</label>
@@ -19,19 +19,46 @@
         </div>
         <div class="form-group">
           <label for="color">What is your favorite color?</label>
-          <input id="color" class="form-control" type="text">
+          <input id="color" class="form-control" type="color">
         </div>
         <div class="form-group">
           <label for="desc">Description of Appointment,</label>
           <input id="desc" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="date">Appointment date?</label>
-          <input id="date" class="form-control" type="text">
+          <label for="date">Date of Appointment:</label>
+          <input id="date" class="form-control" type="date">
         </div>
         <div class="form-group">
           <label for="stend">Appointment start and end time?</label>
           <input id="stend" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="beverage">Your Beverage of Choice</label>
+          <select class="form-control" id="beverage">
+            <option>Iced Tea</option>
+            <option>Vegan Almond Milk</option>
+            <option>Coca Cola</option>
+            <option>Whiskey</option>
+          </select>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookies and cream">
+              Cookies & Cream
+            </label>
+          </div>
         </div>
         <button type="submit" class="btn btn-info" name="button">Button</button>
       </form>
@@ -41,7 +68,8 @@
       </div> <!-- class = card-header -->
       <div class="card-body">
         <p class="card-text">Hello, <span class="name"></span></p>
-        <p class="card-text">Your appointment to <span class="desc"></span> in the <span class="color"></span> office is confirmed for <span class="date"></span> from <span class="stend"></span>. Please call up to 2 years in advance to cancel or reschedule your appointment.</p>
+        <p class="card-text">Your appointment to <span class="desc"></span> in office <span class="color"></span> is confirmed for <span class="date"></span> from <span class="stend"></span>. Please call up to 2 years in advance to cancel or reschedule your appointment.</p>
+        <h5> We will provide a steaming cup of <span class="beverage"></span>, and one plate of <span class="flavor"></span> spaghetti for your refreshment.</h5>
       </div> <!-- class = card-body -->
     </div> <!-- class = card id = appointment -->
   </div> <!-- class = container -->

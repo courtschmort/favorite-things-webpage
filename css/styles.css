@@ -4,3 +4,10 @@
 #appt-form {
   padding: 100px 100px 50px 100px;
 }
+.form-group {
+  margin-bottom: 10px;
+}
+.radio {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
